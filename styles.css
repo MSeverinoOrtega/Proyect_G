@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  margin-top: 10px;  
+}
+
+body{
+        background-color: #F9EAEA;
+        
+}
+
+h1,h2,h3,h5,h6{
+    text-align: left;
+    color: #48114D;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    
+} 
+
+.card-text{
+    text-align: left;
+    color: #48114D;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/* Cambiarle el color a los links y estilos para Navbars */
+a{
+    color: #48114D;
+}
+.nav .nav-link{
+    color: #48114D;
+
+}
+.nav-item{
+    color: #48114D;
+
+
+}
+
+.nav{
+    color: #48114D;
+    background-color:#FCE3E3;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    right: 50%;
+    justify-content: center;
+    height: 90px;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px;
+}
+.text{
+    font-size: medium;
+    font-weight: lighter;
+   
+}
+
+
+
+/* Agregar estilo al logo */
+#logo {
+  max-width: 135px; /* Ajustar el tamaño máximo del logo */
+}
+
+/* Alinear el texto al centro */
+.navbar-nav {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Alinear el botón del carrito a la derecha */
+#btnCarrito {
+  margin-left: auto;
+}
+
+/* Ajustar el espaciado entre elementos del menú */
+.navbar-nav .nav-item {
+  margin: 0 15px;
+}
+
+/* Cards */
+
+.row{
+    padding: 70px;
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+    max-height:300px;
+
+}
+
+
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    max-height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px;
+}
+
+.card-body{
+    padding: 25px;
+    margin-top: -20px;
+}
+
+/* /botones/ */
+#compraYalg {
+    
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    background-color: #6F275D;
+    color: white;
+    width: 180px;
+    border-radius: 6px;
+    padding-top: 0px;
+
+}
+
+
+.btn{
+    border-color: #48114D;
+    width: 90px;
+    background-color: white;
+  
+}
+
+
+.barra-horizontal{
+        position: absolute;
+        top: 87%;
+        left: 0;
+        width: 100%;
+        height: 14px;
+        background-color: #48114D;   
+}
+
+
+/* fondo */
+body{
+    background-color: #F9EAEA;
+}
+
+.header{
+    background-color:#F9EAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    height: 120px;
+    padding: 5px 10%;
+    margin: -20px;
+}
+
+.header .logo{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img{    
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+/* automento gradual */
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+/* stylo a las letras de navegacion */
+.header .nav-links{
+    list-style: none;
+    display: flex;
+    margin-right: auto;
+}
+
+.header .nav-links li{ 
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-weight: 700;
+    color: #602F6B;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: grey;
+}
+
+.header .btn button,
+.header .menu button{
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: #602F6B; 
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px;
+}
+
+.header .btn button:hover,
+.header .menu button:hover{
+    background:rgb(225, 194, 231);
+    color: #602F6B;
+    transform:scale(1.1)
+}
+
+@media screen and (max-width: 800px){
+    .nav-links, .btn{
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+/* anterior nav
+ */
+.nav{
+  color: #48114D;
+  background-color:#FCE3E3;
+  font-family: "Cabin", sans-serif;
+  font-weight: bold;
+  right: 50%;
+  justify-content: center;
+  height: 90px;
+  margin: 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 3px 0px;
+}
+.text{
+  font-size: medium;
+  font-weight: lighter;
+ 
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(105, 48, 105);
+  padding: 10px;
+  margin-bottom: 20px;
+  height: 150px;
+  min-height: 100px
+}
+
+.navbar-toggler:active {
+  background-color: #F9EAEA;
+}
+.navbar-collapsed.show {
+  background-color:  #F9EAEA;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  max-width: 135px;
+  height: auto;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  background-color: #F9EAEA;
+  color: #fff;
+  padding: 10px;
+  font-family: "Cabin", sans-serif;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  color: rgb(105, 48, 105);
+}
+
+.cart-container {
+  flex: 1;
+  text-align: center;
+}
+
+.cart-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #602F6B;
+}
+
+.btn {
+  font-weight: 700;
+  color: white;
+  padding: 9px 25px;
+  background: #602F6B; 
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  background: rgb(225, 194, 231);
+  color: #602F6B;
+  transform: scale(1.1);
+}
+
+#back-btn {
+  background-color: #F9EAEA; /* Cambia el color de fondo */
+  color: rgb(105, 48, 105); /* Cambia el color del texto */
+  border: 1px solid #F9EAEA; /* Cambia el color del borde, si lo deseas */
+  border-radius: 11px;
+  cursor: pointer;
+  font-weight: bold; /* Asegúrate de mantener el texto en negrita */
+  transition: all 0.3s ease 0s;
+}
+
+#back-btn:hover {
+  background: rgb(225, 194, 231);
+  color: #602F6B;
+  transform: scale(1.1);
+}
+
+#back-btn {
+  background-color: #F9EAEA !important;
+  color: rgb(105, 48, 105) !important;
+}
+ 
+.cart-container span {
+  display: block;
+  font-weight: bold;
+}
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.cart-item button {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Cinta Rosada */
+.pink-ribbon {
+  background-color: pink;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+
+.menu ,
+.menu {
+    font-weight: 700;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px;
+}
+
+.menu :hover,
+.menu :hover{
+    background:rgb(225, 194, 231);
+    color: #602F6B;
+    transform:scale(1.1)
+}
+
+
+.categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.categories li {
+  display: inline;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  color: rgb(105, 48, 105);
+}
+
+.categories li:hover {
+  background: rgb(225, 194, 231);
+  color: #602F6B;
+  transform: scale(1.1);
+}
+/* Carrito de Compra */
+h3 {
+  text-align: center;
+}
+
+
+#back-btn {
+  cursor: pointer;
+}
+/* controlar tamaño de la ficha producto carrito */
+.product-summary {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  max-width: 1200px; /* Ajusta el ancho máximo del contenedor (cambia según tus necesidades) */
+}
+
+.product-image {
+  width: 100px; /* Ajusta el ancho de la imagen (cambia según tus necesidades) */
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-details {
+  flex: 1;
+}
+
+.product-name,
+.product-price,
+.product-subtotal {
+  margin: 5px 0;
+}
+
+.product-subtotal {
+  font-weight: bold;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.total p {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#pay-btn {
+    background-color: #f9f9f9; 
+    color: rgb(105, 48, 105); 
+    border-radius: 8px;
+    padding-right: 28px;
+    cursor: pointer;
+    
+    
+}
+
+#pay-btn:hover {
+  background-color: rgb(105, 48, 105);
+  color: #F9EAEA;
+  transition: all 0.1s ease 0s;
+  transform: scale(1.1); /* Aplicar un efecto de zoom al 110% (1.1 veces el tamaño original) */
+}
+
+/* BOTON PAGAR CARRITO.  */
+#pagar-boton-carrito {
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(105, 48, 105);
+  background-color: #F9EAEA;
+  border-radius: 8px;
+  font-family: "Cabin", sans-serif;
+
+}
+
+/* Estilo para el botón en hover */
+#pagar-boton-carrito:hover {
+  background-color: rgb(105, 48, 105);
+  color: #F9EAEA;
+  transition: all 0.1s ease 0s;
+  transform: scale(1.1); /* Aplicar un efecto de zoom al 110% (1.1 veces el tamaño original) */
+}
+
+
+/* Estilos para el título */
+.page-title {
+  font-family: "Cabin", sans-serif;
+  color: rgb(105, 48, 105);
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+title {
+  font-family: "Cabin", sans-serif;
+  color: rgb(105, 48, 105);
+}
+/* LETRAS : CARRITO: */
+
+.product-summary {
+  display: flex;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.product-image {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.product-details {
+  font-family: "Cabin", sans-serif;
+  color: rgb(105, 48, 105);
+  flex: 1; /* Expande el contenido para ocupar todo el espacio disponible */
+  display: flex;
+  flex-direction: column; /* Apila los elementos verticalmente */
+  justify-content: center; /* Centra verticalmente los elementos */
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.product-price,
+.product-subtotal {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+
+.product-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.product-info p {
+  margin: 5px 0;
+}
+
+/* Estilo para el título "Sugeridos" */
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para el título "Sugeridos" */
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ESTYLO CARD */
+
+
+
+#boton-comprar-sugeridos{
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(105, 48, 105);
+  background-color: #F9EAEA;
+  border-radius: 8px;
+  font-family: "Cabin", sans-serif;
+  background-color: #f9f9f9;
+  color: rgb(105, 48, 105);
+  border-radius: 8px;
+  padding-right: 28px;
+  cursor: pointer;
+
+}
+#boton-comprar-sugeridos:hover {
+  background-color: rgb(105, 48, 105);
+  color: #F9EAEA;
+  transition: all 0.1s ease 0s;
+  transform: scale(1.1); /* Aplicar un efecto de zoom al 110% (1.1 veces el tamaño original) */
+}
+
+
+
+
+
+/* Pie de Página */
+.footer {
+  background-color: #F9EAEA;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos Generales */
+p {
+  margin: 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .menu {
+    margin-top: 10px;
+  }
+
+  .menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .cart-container {
+    margin-top: 10px;
+  }
+
+  .product-summary {
+    flex-direction: column;
+  }
+
+  .product-image {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .total {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+
+/* Sugerencias */
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 1200px) {
+  .suggested-container {
+    flex-direction: column;
+    max-width: 400px; /* Puedes ajustar este valor al ancho deseado para pantallas pequeñas */
+  }
+}
+
+
+.suggested-item {
+  padding: px;
+  border: 1px solid #800080;
+  margin-bottom: 30px; /* Agregamos margen inferior para separar los elementos */
+}
+
+.suggested-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px; /* Ajusta el ancho del contenedor */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.suggested-image {
+  max-width: 100px; /* Ajusta el ancho máximo de la imagen */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  border-radius: 10px;
+}
+
+
+.suggested-container {
+  display: flex;
+  justify-content: space-between;  /* Centra horizontalmente los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la fila y se envuelvan cuando no haya espacio */
+  gap: 10px; /* Ajusta el espacio entre los elementos */
+}
+
+.suggested-item {
+  /* Otras propiedades CSS existentes */
+  width: 250px; /* Ajusta el ancho del contenedor */
+}
+
+
+/* LETRAS LISTA */
+.categories li {
+  display: inline;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  color: rgb(105, 48, 105);
+  font-weight: bold; /* Agrega esta línea para hacer el texto más grueso */
+}
+
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  font-family: "Cabin", sans-serif;
+  color: rgb(105, 48, 105);
+  font-size: 20px; /* Cambia el tamaño de las letras */
+  font-weight: bold; /* Opcional: Si deseas hacer el texto en negrita */
+}
+
+@media (max-width: 768px) {
+  .menu li {
+    font-size: 16px; /* Tamaño de letra para pantallas pequeñas */
+    /* Otras modificaciones si es necesario */
+  }
+}
+
+
+  /* Estilos personalizados FOOTER*/
+  body {
+    font-family: 'Cabin', sans-serif; /* Utilizar la fuente Cabin como fuente predeterminada */
+  }
+
+  .bottom-bar {
+    background-color:#F9EAEA;
+    height: 200px;
+    color:  #48114D;
+  }
+
+  .bottom-bar-logo {
+    font-weight: bold;
+  }
+
+  .bottom-bar-link {
+    color:  #48114D;
+    text-decoration: none;
+  }
+
+  .bottom-bar-section {
+    flex-grow: 1;
+    padding: 0 20px;
+  }
+
+  /* Pequeño ajuste para dispositivos móviles */
+  @media (max-width: 767px) {
+    .bottom-bar-section {
+      padding: 0 10px;
+    }
+  }
+
+  /* FOOTER */
+  /* Estilos personalizados */
+  body {
+    font-family: 'Cabin', sans-serif;
+    /* Utilizar la fuente Cabin como fuente predeterminada */
+  }
+
+  .bottom-bar {
+    background-color: #F9EAEA;
+    height: 200px;
+    color: #48114D;
+  }
+
+  .bottom-bar-logo {
+    font-weight: bold;
+  }
+
+  .bottom-bar-link {
+    color: #48114D;
+    text-decoration: none;
+  }
+
+  .bottom-bar-section {
+    flex-grow: 1;
+    padding: 0 20px;
+  }
+
+  /* Pequeño ajuste para dispositivos móviles */
+  @media (max-width: 767px) {
+    .bottom-bar-section {
+      padding: 0 10px;
+    }
+  }
+
+  #menu {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFFFF;
+}
+
+#menu a {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 30px;
+    color: #602F6B;
+}
+
+#menu img {
+    height: 130px;
+}
+
+#btnCarrito {
+    width: 80px;
+}
+
+.mySvg {
+    fill: #602F6B;
+}
+
+.nav-link {
+    transition: transform 0.3s;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+}
+
+#btnCarrito {
+    transition: transform 0.3s;
+}
+
+#btnCarrito:hover {
+    transform: scale(1.2);
+}
+
+#logoLink {
+    transition: transform 0.3s;
+}
+
+#logoLink:hover {
+    transform: scale(1.2);
+}
+
+
+/* borde de carrito */
+  #btnCarrito {
+    border: 2px solid #48114D; /* Agregar el borde de color #48114D al botón */
+    border-radius: 4px; /* Opcional: Agregar esquinas redondeadas al borde */
+    padding: 8px; /* Opcional: Ajustar el espaciado interno del botón */
+    background-color: transparent; /* Establecer el fondo transparente por defecto */
+  }
+
+  #btnCarrito .bi-cart2 {
+    padding: 2px; /* Ajustar el espaciado interno del icono del carrito */
+  }
+
+  /* Cambiar el color del fondo y el carrito en el estado de hover */
+  #btnCarrito:hover,
+  #btnCarrito:active {
+    background-color: #48114D; /* Cambiar el color del fondo a #48114D */
+  }
+
+  #btnCarrito:hover .bi-cart2,
+  #btnCarrito:active .bi-cart2 {
+    fill: #FFFFFF; /* Cambiar el color del carrito a blanco (#FFFFFF) */
+  }
+/* boton de wsp  */
+
+.whatsapp-button {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
